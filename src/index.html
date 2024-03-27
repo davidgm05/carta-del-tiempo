@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta del Tiempo</title>
+  <link rel="stylesheet" href="scss/style.scss">
+</head>
+<body>
+  <div id="weather-form">
+    <div id="weather-info" style="display: none;">
+      <div id="temperature-city"></div>
+      <div class="contenedor-grados">
+      <p><span id="temperature"></span><strong id="c">&deg;C</strong></p>
+      <div id="icon-temperature"></div>
+      </div>
+      <p><strong>Sensación Térmica:</strong> <span id="feels-like"></span>&deg;C</p>
+      <p><strong>Humedad:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Velocidad del Viento:</strong> <span id="wind-speed"></span> m/s</p>
+      <p><strong>Dirección del Viento:</strong> <span id="wind-direction"></span></p>
+    </div>
+    <h2 id="carta-del-tiempo">Carta del Tiempo</h2>
+    <form id="get-weather-form">
+      <label for="country">País:</label>
+      <select id="country" name="country">
+        <option value="ES">España</option>
+        <option value="US">Estados Unidos</option>
+      </select><br><br>
+      <label for="city">Ciudad:</label>
+      <input type="text" id="city" name="city"><br><br>
+      <button type="submit">Obtener Tiempo</button>
+    </form>
+  </div>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
