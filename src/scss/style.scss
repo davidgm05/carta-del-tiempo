@@ -10,7 +10,7 @@ body {
   }
   
   #weather-form {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(9, 68, 150, 0.729);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -102,4 +102,45 @@ body {
   #temperature-city{
     font-size: 30px;
     color: white;
+  }
+
+  .cloud1{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    left: 20%;
+    top: 120px;
+  }
+
+  .cloud2{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    left: 100px;
+    top: 190px;
+  }
+
+  .cloud3{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    left: 450px;
+    top: 200px;
+  }
+
+  .cloud4{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    left: 850px;
+    top: -100px;
+  }
+
+  .cloud5{
+    position: absolute;
+    z-index: -1;
+    width: 550px;
+    left: 50px;
+    top: -150px;
+    transform: scale(-1, 1);
   }
